@@ -25,6 +25,8 @@ class AddCommand extends BaseCommand
             compact('description')
         );
 
+        $output->writeln('<info>Task added</info>');
+
         $this->showTasks($output);
     }
 }

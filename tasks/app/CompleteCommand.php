@@ -25,6 +25,8 @@ class CompleteCommand extends BaseCommand
             compact('id')
         );
 
+        $output->writeln('<info>Task completed</info>');
+
         $this->showTasks($output);
     }
 }
